@@ -1,3 +1,336 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+.container {
+  width: 880px;
+  margin: auto;
+}
+
+p {
+  line-height: 1.2;
+}
+
+header {
+  padding: 20px 20px 20px;
+  position: fixed;
+  width: 880px;
+  background-color: #62a3bc;
+  /* padding: 10px 0 50px 20px; */
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  /* display: inline-block; */
+  width: 75%;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0 25px 0px;
+}
+
+.intro-container {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 80px 0 20px 0;
+}
+
+.services-container {
+  padding-top: 75px;
+  display: flex;
+  flex-flow: column wrap;
+}
+.services-text {
+  padding: 25px 0;
+}
+
+.intro {
+  width: 450px;
+  text-align: center;
+  padding: 0px 0px 40px;
+}
+
+h1 {
+  font-size: 50pt;
+}
+
+h2 {
+  font-size: 20pt;
+}
+
+h3 {
+  /* font-size: 15pt; */
+}
+
+.introimg {
+  display: inline-block;
+  padding: 20px 10px 10px 20px;
+}
+
+.intro button {
+  padding: 5px 40px 5px;
+  border: 1px solid black;
+  font-family: "Titillium Web";
+}
+
+/* header p {
+  text-align: center;
+  border: 1px solid black;
+  width: 150px;
+} */
+
+.codeimg {
+  width: 30%;
+  height: 30%;
+  padding: 0 20px 20px 100px;
+}
+
+.top-content {
+  border-top: 1px solid black;
+  padding: 30px 0 30px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.top-content .features {
+  width: 49%;
+  margin-right: 5px;
+}
+
+.top-content .about {
+  display: inline-block;
+  width: 49%;
+}
+
+.boxes-container {
+  margin-top: 15px;
+  padding-bottom: 30px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.middle-boxes {
+  width: 425px;
+  border: 1px solid black;
+  background-color: #f4f3f4;
+  padding: 30px;
+  margin-top: 35px;
+}
+
+.middle-img {
+  display: block;
+  width: 100%;
+}
+
+.learn-more {
+  width: 35%;
+  padding: 10px 0;
+  margin-top: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-size: 70%;
+}
+
+.bottom-content {
+  border-bottom: 1px solid black;
+  padding: 20px 0 30px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.bottom-content .services {
+  width: 32%;
+}
+
+.bottom-content .product {
+  width: 32%;
+  margin: 0px 10px 0px;
+}
+
+.bottom-content .vision {
+  width: 32%;
+}
+
+.contact-content {
+  margin-top: 30px;
+}
+
+.facts-container {
+  /* border: 2px solid red; */
+  margin: 35px 0;
+  display: flex;
+}
+
+.facts-container p {
+  padding-right: 50px;
+}
+
+ul {
+  list-style-type: square;
+  list-style-position: inside;
+  margin-top: 20px;
+  line-height: 1.7;
+}
+
+footer p {
+  text-align: center;
+  margin-bottom: 30px;
+}
