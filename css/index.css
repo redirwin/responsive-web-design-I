@@ -417,4 +417,10 @@ footer p {
   footer {
     margin-top: 40px;
   }
+
+  services-header-img {
+    border: 2px solid red;
+    /* width: 100%;
+    height: auto; */
+  }
 }
